@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #faf9f6;
+  --primary-color-dark: #3d3d3c;
+  --secondary-color: #303030;
+  --text-dark: #0d0f13;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #faf9f6;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #faf9f6;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__content .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: .3s;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left .3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+nav ul li.link a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-55%);
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.link a:hover::after {
+  width: 35%;
+}
+
+section.topo-do-site {
+  padding: 40px 10%;
+  margin-top: 80px;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.topo-do-site h1 {
+  color: var(--secondary-color);
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: var(--text-dark);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  width: 100%;
+}
+
+.btn-contato button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-contato button:hover {
+  background-color: var(--primary-color-dark);
+  transform: scale(1.05);
+}
+
+section.services {
+  padding: 40px 4%;
+}
+
+.title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+section.services .flex {
+  gap: 60px;
+}
+
+#services .services-box {
+  color: var(--secondary-color);
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+}
+
+#services .services-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #53525278;
+}
+
+#services .services-box img {
+  width: 40px;
+}
+
+#services .services-box h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+section#sobre {
+  padding: 80px 4%;
+}
+
+section#sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+#sobre .txt-sobre {
+  color: var(--secondary-color);
+}
+
+#sobre .txt-sobre h2 {
+  font-size: 2rem;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+#sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+#sobre .img-sobre img {
+  position: relative;
+  padding: 40px 10%;
+  width: 600px;
+  border-radius: 10px;
+}
+
+#rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+  border-top: 1px solid #e6e1e1;
+}
+
+#rodape div {
+  display: flex;
+  flex-direction: column;
+}
+
+#rodape ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#rodape ul li {
+  font-size: 1rem;
+  margin-left: 2px;
+}
+
+#rodape p:last-of-type {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+#rodape .marca {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#rodape .contato {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 55px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+
+  .txt-topo-site h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .txt-topo-site p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .interface .title {
+    font-size: 1.8rem;
+  }
+
+  section.topo-do-site .flex {
+    gap: 40px;
+  }
+
+  section.topo-do-site {
+    padding: 20px 8%;
+  }
+
+  .topo-do-site h1 {
+    font-size: 1.5rem;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 100vw;
+  }
+
+  .btn-contato {
+    display: flex;
+    justify-content: center;
+  }
+
+  section#services {
+    padding: 40px 8%;
+  }
+
+  section#sobre {
+    padding: 80px 8%;
+  }
+
+  #sobre .flex {
+    flex-direction: column-reverse;
+  }
+
+  #sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  #sobre .img-sobre img {
+    position: relative;
+    width: 400px;
+    border-radius: 8px;
+  }
+
+  #rodape .marca,
+  #rodape .contato {
+    display: none; 
+  }
+
+  #rodape div:first-child {
+    display: none;
+  }
+
+  #rodape {
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px;
+  }
+
+  #rodape ul {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 10px;
+  }
+}
