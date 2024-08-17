@@ -1,40 +1,124 @@
-
 <!DOCTYPE html>
+<html lang="pt-br">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    Site XPTO
-    <link rel="stylesheet" href="../../style.css" />
-    <style type="text/css">
-        .banner{
-            width: 100%;
-        }
-    </style>
-  </head>
-  <body>
-    <header>
-        <div class="banner"><img src="https://vooozer.com/wp-content/uploads/2018/10/exemplo-marketing-de-relacionamento.png"/></div>
-        <div>Quem somos</div>
-        <div>
-            Somos XPTO, atuamos com isso, isso e aquilo a muitos anos no mercado, contrate já!
-        </div>
-        <button>Contrate</button>
-    </header>
-    <main>
-      <h3>Interessado? Vem ser XPTO</h3>
-      <div class="details">
-        * Somos especialistas
-        * Time capacitado
-        * Apaixonados pelo sucesso
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/icones/bx-code-alt.svg" type="icon">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>tech4all.</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">tech4all.</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check">
+        <ul>
+          <li class="link"><a href="#">Início</a></li>
+          <li class="link"><a href="#services">Serviços</a></li>
+          <li class="link"><a href="#sobre">Sobre</a></li>
+          <li class="link"><a href="#rodape">Contato</a></li>
+        </ul>
       </div>
-    </main>
-    <footer>
-      <h2>Contato</h2>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topo-do-site">
+      <div class="interface">
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>O futuro da tecnologia é para todos</h1>
+            <p>A tech4all está transformando o mundo com soluções tecnológicas inovadoras e acessíveis. Acreditamos que
+              a tecnologia deve estar ao alcance de todos, impulsionando o crescimento e a inovação em todos os setores.
+              Descubra como a tech4all pode impulsionar o seu negócio.</p>
+
+            <div class="btn-contato">
+              <a href="#">
+                <button id="btn-contrate">Contrate</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-topo-site">
+            <img src="./assets/imagens/banner.png" alt="imagem de um site responsivo sendo exibida em três dispositivos diferentes: desktop, laptop e mobile">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="interface">
+        <h2 class="title">Serviços</h2>
+        <div class="flex">
+          <div class="services-box">
+            <img src="./assets/icones/bx-palette.svg" alt="ícone de paleta de cores">
+            <h3>UI Design</h3>
+            <p>Transforme suas ideias em designs modernos e funcionais. Nosso UI Design foca na experiência do usuário,
+              garantindo que seu produto seja fácil de usar e memorável</p>
+          </div>
+
+          <div class="services-box">
+            <img src="./assets/icones/macbook-line.svg" alt="ícone de notebook">
+            <h3>Front-end</h3>
+            <p>Transformamos designs incríveis em realidade. Nosso desenvolvimento front-end garante que seu site seja
+              rápido, responsivo e funcione perfeitamente em todos os dispositivos.</p>
+          </div>
+
+          <div class="services-box">
+            <img src="./assets/icones/gear-solid.svg" alt="ícone de engrenagem">
+            <h3>Back-end</h3>
+            <p>Construímos a base sólida que sustenta seu site. Nosso desenvolvimento back-end oferece alta performance
+              e confiabilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="interface">
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="./assets/imagens/time.jpg" alt="imagem de pessoas desenvolvedoras trabalhando">
+          </div>
+
+          <div class="txt-sobre">
+            <h2>Sobre nós</h2>
+            <p>A tech4all nasceu da paixão por criar experiências digitais únicas. Nossa missão é transformar ideias em
+              realidade, desenvolvendo sites e aplicações web que não apenas funcionam, mas encantam.
+            <p>Acreditamos que a tecnologia deve ser acessível e intuitiva, e trabalhamos incansavelmente para entregar
+              soluções personalizadas que atendam às necessidades de cada cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="rodape">
+    <div>
+      <p class="marca">tech4all.</p>
+      <p>O futuro da tecnologia é para todos.</p>
+    </div>
+    <div>
+      <h4 class="contato">Contato</h4>
       <ul>
-        <li><a href="https://github.com/">Facebook</a></li>
-        <li><a href="https://github.com/">Insta</a></li>
+        <li><a href="https://www.linkedin.com/in/nayla-hilana-dev/"><img src="./assets/icones/linkedin-brands-solid.svg" alt="ícone do linkedIn"></a></li>
+        <li><a href="mailto:contato@tech4all.com.br">contato@tech4all.com.br</a></li>
       </ul>
-    </footer>
-  </body>
+    </div>
+    <p>Copyright © 2024 tech4all. All rights reserved.</p>
+  </footer>
+
+
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
