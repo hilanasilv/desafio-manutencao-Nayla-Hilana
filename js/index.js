@@ -1,4 +1,4 @@
-const botaoContrate = document.getElementById('btn-contrate');
+const botaoContrate = document.getElementById('btn_contrate');
 
 botaoContrate.addEventListener('click', function (event) {
     event.preventDefault();
