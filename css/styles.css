@@ -109,36 +109,36 @@ nav ul li.link a {
   width: 35%;
 }
 
-section.topo-do-site {
+section.topo_do_site {
   padding: 40px 10%;
   margin-top: 80px;
 }
 
-section.topo-do-site .flex {
+section.topo_do_site .flex {
   align-items: center;
   justify-content: center;
   gap: 200px;
 }
 
-.topo-do-site h1 {
+.topo_do_site h1 {
   color: var(--secondary-color);
   margin-top: 30px;
   font-size: 2rem;
   line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site p {
+.topo_do_site .txt_topo_site p {
   color: var(--text-dark);
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.topo-do-site .img-topo-site img {
+.topo_do_site .img_topo_site img {
   position: relative;
   width: 100%;
 }
 
-.btn-contato button {
+.btn_contato button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   margin-top: 20px;
@@ -150,26 +150,26 @@ section.topo-do-site .flex {
   cursor: pointer;
 }
 
-.btn-contato button:hover {
+.btn_contato button:hover {
   background-color: var(--primary-color-dark);
   transform: scale(1.05);
 }
 
-section.services {
+section.servicos {
   padding: 40px 4%;
 }
 
-.title {
+.titulo {
   color: var(--secondary-color);
   text-align: center;
   font-size: 2rem;
 }
 
-section.services .flex {
+section.servicos .flex {
   gap: 60px;
 }
 
-#services .services-box {
+#servicos .servicos_box {
   color: var(--secondary-color);
   padding: 40px;
   border-radius: 20px;
@@ -177,16 +177,16 @@ section.services .flex {
   transition: .2s;
 }
 
-#services .services-box:hover {
+#servicos .servicos_box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #53525278;
 }
 
-#services .services-box img {
+#servicos .servicos_box img {
   width: 40px;
 }
 
-#services .services-box h3 {
+#servicos .servicos_box h3 {
   font-size: 1.5rem;
   margin: 15px 0;
 }
@@ -200,22 +200,22 @@ section#sobre .flex {
   gap: 60px;
 }
 
-#sobre .txt-sobre {
+#sobre .txt_sobre {
   color: var(--secondary-color);
 }
 
-#sobre .txt-sobre h2 {
+#sobre .txt_sobre h2 {
   font-size: 2rem;
   line-height: 40px;
   margin-bottom: 30px;
 }
 
-#sobre .txt-sobre p {
+#sobre .txt_sobre p {
   margin: 20px 0;
   text-align: justify;
 }
 
-#sobre .img-sobre img {
+#sobre .img_sobre img {
   position: relative;
   padding: 40px 10%;
   width: 600px;
@@ -293,18 +293,18 @@ section#sobre .flex {
     flex-direction: column;
   }
 
-  .topo-do-site .flex {
+  .topo_do_site .flex {
     flex-direction: column-reverse;
   }
 
-  .txt-topo-site h1 {
+  .txt_topo_site h1 {
     font-size: 1.8rem;
     text-align: center;
     line-height: 30px;
     margin-bottom: 20px;
   }
 
-  .txt-topo-site p {
+  .txt_topo_site p {
     font-size: 1rem;
     text-align: center;
   }
@@ -313,28 +313,28 @@ section#sobre .flex {
     font-size: 1.8rem;
   }
 
-  section.topo-do-site .flex {
+  section.topo_do_site .flex {
     gap: 40px;
   }
 
-  section.topo-do-site {
+  section.topo_do_site {
     padding: 20px 8%;
   }
 
-  .topo-do-site h1 {
+  .topo_do_site h1 {
     font-size: 1.5rem;
   }
 
-  .topo-do-site .img-topo-site img {
+  .topo_do_site .img_topo_site img {
     width: 100vw;
   }
 
-  .btn-contato {
+  .btn_contato {
     display: flex;
     justify-content: center;
   }
 
-  section#services {
+  section#servicos {
     padding: 40px 8%;
   }
 
@@ -346,19 +346,19 @@ section#sobre .flex {
     flex-direction: column-reverse;
   }
 
-  #sobre .txt-sobre h2 {
+  #sobre .txt_sobre h2 {
     font-size: 34px;
     line-height: 35px;
     text-align: center;
   }
 
-  #sobre .img-sobre img {
+  #sobre .img_sobre img {
     position: relative;
     width: 400px;
     border-radius: 8px;
   }
 
-  #rodape .marca,
+  #rodape .logo_marca,
   #rodape .contato {
     display: none; 
   }
